@@ -1,0 +1,21 @@
+//
+****************************************
+for local 
+****************************************
++ git clone : get repo from git sever to local dir
++ git status : check status
++ git pull: update for local branch
++ git push: push from local to server 
++ git fetch: 
++ git init: init .git
++ git add.: add new change to local branch
++ git commit: commit the change(-am)
++ git reset --hard: restore the last commit
++ git log: view history change in git 
++ git add: add new item(dir or file) to branch local
++ git mv: change name of file or dir
++ git rm: remove file or dir
+##################################
+      for remote git server
+##################################
++  
