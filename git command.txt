@@ -19,3 +19,6 @@ for local
       for remote git server
 ##################################
 +  
+
+
+http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/vi/ch02.html
