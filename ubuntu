@@ -8,3 +8,9 @@ ps ax | grep dpkg
 sudo kill
 http://www.artekit.eu/stm32-usb-gamepad-interface/
 vxgfdgdfg
+
+
+        sudo add-apt-repository ppa:unity-team/ppa 
+        sudo apt-get update && sudo apt-get dist-upgrade
+
+
