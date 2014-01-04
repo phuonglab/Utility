@@ -14,3 +14,16 @@ vxgfdgdfg
         sudo apt-get update && sudo apt-get dist-upgrade
 
 
+/*
+* Set up samba on ubuntu 12.04
+*/
+
++Install : 
+        sudo apt-get install samba
+        sudo apt-get install python-glade2 system-config-samba //GUI Tool
++Add user share :
+        sudo useradd -s /bin/false usershare
++Set password:
+        sudo smbpasswd usershare
++Set ownership for share folder
+        sudo chown -R usershare /pathtofoldershare
