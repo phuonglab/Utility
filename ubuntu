@@ -27,3 +27,11 @@ vxgfdgdfg
         sudo smbpasswd usershare
 +Set ownership for share folder
         sudo chown -R usershare /pathtofoldershare
+
+
+/*
+* Install miss packet for build 
+*/
+sudo apt-get install --fix-missing build-essential bison flex gettext texinfo 
+ncurses-dev libglib2.0-dev zlib1g-dev ccache uboot-mkimage cramfsprogs
+
