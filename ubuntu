@@ -53,3 +53,4 @@ http://mirror.egtvedt.no/avr32linux.org/twiki/bin/view/Main/Qtopia
 http://processors.wiki.ti.com/index.php/Qt_Tips
 https://gitorious.org/matrix-gui-v2
 http://www.doublecreations.com/projects/matrixgl/
+diff -crBN org_folder new_folder > patch_file.patch
