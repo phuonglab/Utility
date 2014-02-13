@@ -56,3 +56,5 @@ http://www.doublecreations.com/projects/matrixgl/
 diff -crBN org_folder new_folder > patch_file.patch
 
 tty0::respawn:-/bin/sh
+
+patch --dry-run -p1
