@@ -61,7 +61,7 @@ patch --dry-run -p1 : test before run patch file
 find ./ -type f -name "*.c" | xargs grep -n "câu muốn tìm"
 
 
-Resize vitrual disk in VitrualBox:
+Resize virtual hard disk in VirtualBox:
         + Run VBoxManage modifyhd "name.vdi" --resize new size(*1024)
         + In Virtual machine ubuntu run GParted to resize 
 
