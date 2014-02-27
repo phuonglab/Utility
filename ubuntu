@@ -81,5 +81,8 @@ http://cristovaorufino.wordpress.com/2014/01/14/compiling-nuttx-for-stm32f4disco
 
 http://kfujio.blog78.fc2.com/blog-entry-100.html
 
-
+Change UUID virtualBox:
+VBoxManage.exe internalcommands sethduuid <Path to the new hard drive .vdi
+VBoxManage.exe list hdds
+VBoxManage.exe closemedium disk <uuid>
 
