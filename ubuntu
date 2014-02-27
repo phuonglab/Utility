@@ -33,8 +33,13 @@ vxgfdgdfg
 * Install miss packet for build 
 */
 sudo apt-get install --fix-missing build-essential bison flex gettext texinfo 
-ncurses-dev libglib2.0-dev zlib1g-dev ccache uboot-mkimage cramfsprogs
+sudo apt-get install ncurses-dev libglib2.0-dev zlib1g-dev ccache uboot-mkimage cramfsprogs
+sudo apt-get install git zlib1g-dev libtool flex bison libgmp3-dev libmpfr-dev 
+sudo apt-get install libncurses5-dev libmpc-dev texinfo libftdi-dev autoconf gperf
 
+
+
+/**/
 http://www.raspberrypi.org/phpBB3/viewtopic.php?t=39951
 http://www.reliableembeddedsystems.com/products-and-services/training-overview/embedded-training-overview/85-embedded-training/83-embedded-linux-systems-architecture.html
 http://ubuntuforums.org/archive/index.php/t-1314602.html
@@ -79,10 +84,10 @@ http://pixhawk.org/modules/start
 http://kfujio.blog78.fc2.com/blog-entry-100.html
 http://cristovaorufino.wordpress.com/2014/01/14/compiling-nuttx-for-stm32f4discovery/
 
-http://kfujio.blog78.fc2.com/blog-entry-100.html
-
 Change UUID virtualBox:
 VBoxManage.exe internalcommands sethduuid <Path to the new hard drive .vdi
 VBoxManage.exe list hdds
 VBoxManage.exe closemedium disk <uuid>
+
+
 
