@@ -89,5 +89,7 @@ VBoxManage.exe internalcommands sethduuid <Path to the new hard drive .vdi
 VBoxManage.exe list hdds
 VBoxManage.exe closemedium disk <uuid>
 
-
+#######################################
+###### change launcher icon size ######
+#######################################
 
