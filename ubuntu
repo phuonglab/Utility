@@ -92,4 +92,9 @@ VBoxManage.exe closemedium disk <uuid>
 #######################################
 ###### change launcher icon size ######
 #######################################
-
+sudo gedit /usr/share/unity-2d/shell/Shell.qml:
+ =>Lookup for LauncherLoader section and change its width to 50
+sudo gedit /usr/share/unity-2d/shell/common/IconTile.qml:        
+ =>Look up Image section and change sourceSize.width and sourceSize.height both to 32
+sudo gedit /usr/share/unity-2d/shell/launcher/LauncherList.qml:
+ =>change property int titlesize to 38 for property int selectionOutlineSize to 50
