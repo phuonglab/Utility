@@ -1,0 +1,8 @@
+* cretare new file:
+    vi file
+* switch between testmode and command mode:
+    i<>esc
+* save and quite: switch to command mode
+    - quite without save: :q! 
+    - quite and save: ZZ
+* add new space: esc, a
