@@ -98,3 +98,29 @@ sudo gedit /usr/share/unity-2d/shell/common/IconTile.qml:
  =>Look up Image section and change sourceSize.width and sourceSize.height both to 32
 sudo gedit /usr/share/unity-2d/shell/launcher/LauncherList.qml:
  =>change property int titlesize to 38 for property int selectionOutlineSize to 50
+ 
+ 
+####################################################################
+############ install vmware tool manual ############################
+####################################################################
+
+https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/
+tar -xf com.vmware.fusion.tools.linux.zip.tar
+unzip com.vmware.fusion.tools.linux.zip
+sudo mkdir /mnt/iso
+sudo mount -o loop payload/linux.iso /mnt/iso
+cp /mnt/iso/VMwareTools-9.6.0-1294478.tar.gz .
+tar xzf VMwareTools-9.6.0-1294478.tar.gz
+cd vmware-tools-distrib/
+sudo ./vmware-install.pl
+
+
+
+
+
+
+
+
+
+
+
