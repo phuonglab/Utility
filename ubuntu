@@ -37,6 +37,25 @@ sudo apt-get install ncurses-dev libglib2.0-dev zlib1g-dev ccache uboot-mkimage 
 sudo apt-get install git zlib1g-dev libtool flex bison libgmp3-dev libmpfr-dev 
 sudo apt-get install libncurses5-dev libmpc-dev texinfo libftdi-dev autoconf gperf
 
+/*
+* Install&Configure ssh-server 
+*/
+sudo apt-get install openssh-server => get&install openssh-server
+sudo apt-get install openssh-client => get&install openssh-clinet
+sudo cp /etc/ssh/sshd_config => setting configure
+AllowUsers username => allow user login
+sudo restart ssh
+
+/*
+* Misc 
+*/
+cut -d: -f1 /etc/passwd => list all user on sysytem
+sudo adduser new_username => add a new user 
+sudo userdel username => delete user
+usermod -l new_username old_username => change user name of user
+sudo passwd username => change user password
+sudo usermod -d /home/directory user => add home directory folder to user
+sudo rm -r /home/username => remove user home directory folder
 
 
 /**/
