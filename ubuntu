@@ -13,6 +13,22 @@ vxgfdgdfg
         sudo add-apt-repository ppa:unity-team/ppa 
         sudo apt-get update && sudo apt-get dist-upgrade
 
+/*
+* VMware Fusion - Permissions on Shared Folders on Ubuntu 
+*/
+Update: Found a more persistent alternative
+1. sudo vim /etc/vmware-tools/services.sh
+2. Search for 'vmhgfs_mnt="/mnt/hgfs"'. After this line add: 'vmuser=${VMWARE_MNT_USER:-root}'
+3. Then search for 'vmware_exec_selinux "mount -t vmhgfs .host:/ $vmhgfs_mnt"' and replace it with following section:
+   uid=`id --user $vmuser`
+   gid=`id --group $vmuser`
+   vmware_exec_selinux "mount -t vmhgfs .host:/ $vmhgfs_mnt -o uid=$uid,gid=$gid"
+4. sudo vim /etc/init/vmware-tools.conf
+Before the "pre-start" and "post-stop" lines add:
+env VMWARE_MNT_USER=[The guest user you want]
+5. sudo reboot
+
+
 
 /*
 * Set up samba on ubuntu 12.04
